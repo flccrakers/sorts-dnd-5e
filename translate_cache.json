@@ -1,0 +1,7 @@
+{
+  "29ecdb06b183ebff4a3cb04bcd275695a468ca968d3d6d96998688ff4cb1b6d4": "Smite aveuglant",
+  "ac746fea83d8cce36925ccb0531498413e858b2f532bf15fbf2df8adf7c0ecd1": "",
+  "7d8b54f7f8a3d795e936290d0c4df605b03d0be002f85a63028b2fb7f24ab464": "Cécité/surdité",
+  "84aa46fb3a66fe2f17ffc13e8ea1cd512af47a6229c47f1dce6a8e4a5013cfe2": "{\"foundryId\" : \"blindingSmite\", \"name\" : \"Blinded\", \"duration\" : {\"seconds\" : 60}, \"statuses\" : [\"blinded\"], \"description\" : \"La cible est aveuglée jusqu'à la fin du sort. À la fin de chacun de ses tours, la cible aveuglée effectue un jet de sauvegarde [[/capacité de sauvegarde=con]], mettant fin au sort sur elle-même en cas de succès.\"}",
+  "49f505c438508add0d147c398e7092896f75d58b0597ce97e61eae6e95b53a0b": "{\"foundryId\" : \"blindnessdeafnes\", \"name\" : \"Blindness\", \"duration\" : {\"seconds\" : 60}, \"statuses\" : [\"blinded\"], \"description\" : \"A la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès.\"}\n\n{\"foundryId\" : \"blindnessdeafne1\", \"name\" : \"Surdité\", \"durée\" : {\"secondes\" : 60}, \"statuses\" : [\"deafened\"], \"description\" : \"À la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès.\"}"
+}
