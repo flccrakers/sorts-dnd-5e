@@ -1,10 +1,10 @@
 [
   {
-    "name": "Blinding Smite",
+    "name": "Châtiment aveuglant",
     "source": "XPHB",
     "activities": [
       {
-        "type": "damage",
+        "type": "dommages",
         "activation": {
           "type": "action"
         },
@@ -14,7 +14,7 @@
               "number": 3,
               "denomination": 8,
               "types": [
-                "radiant"
+                "radieux"
               ],
               "scaling": {
                 "mode": "whole",
@@ -30,13 +30,13 @@
         ]
       },
       {
-        "name": "End of Turn Save",
-        "type": "save",
+        "name": "Sauvegarde de fin de tour",
+        "type": "sauver",
         "activation": {
           "type": ""
         },
         "damage": {
-          "onSave": "none"
+          "onSave": "aucun"
         },
         "save": {
           "ability": [
@@ -56,37 +56,35 @@
     "effects": [
       {
         "foundryId": "blindingSmite",
-        "name": "Blinded",
+        "name": "Aveuglé",
         "duration": {
           "seconds": 60
         },
         "statuses": [
-          "blinded"
+          "aveuglé"
         ],
-        "description": "The target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a [[/save ability=con]] saving throw, ending the spell on itself on a success."
+        "description": "La cible est aveuglée jusqu'à la fin du sort. A la fin de chacun de ses tours, la cible aveuglée effectue un jet de sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès."
       }
     ],
     "migrationVersion": 3,
     "_src_file": "foundry.json",
     "_book": null,
-    "name_fr": "Smite aveuglant",
-    "school_fr": "",
-    "desc_fr": "{\"foundryId\" : \"blindingSmite\", \"name\" : \"Blinded\", \"duration\" : {\"seconds\" : 60}, \"statuses\" : [\"blinded\"], \"description\" : \"La cible est aveuglée jusqu'à la fin du sort. À la fin de chacun de ses tours, la cible aveuglée effectue un jet de sauvegarde [[/capacité de sauvegarde=con]], mettant fin au sort sur elle-même en cas de succès.\"}"
+    "name_en": "Smite aveuglant"
   },
   {
-    "name": "Blindness/Deafness",
+    "name": "Cécité/Surdité",
     "source": "XPHB",
     "system": {
       "target.affects.count": "@item.level - 1"
     },
     "activities": [
       {
-        "type": "save",
+        "type": "sauver",
         "activation": {
           "type": "action"
         },
         "damage": {
-          "onSave": "half"
+          "onSave": "moitié"
         },
         "save": {
           "ability": [
@@ -109,32 +107,30 @@
     "effects": [
       {
         "foundryId": "blindnessdeafnes",
-        "name": "Blindness",
+        "name": "Cécité",
         "duration": {
           "seconds": 60
         },
         "statuses": [
-          "blinded"
+          "aveuglé"
         ],
-        "description": "At the end of each of its turns, the target repeats the [[/save ability=con]] save, ending the spell on itself on a success."
+        "description": "A la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès."
       },
       {
         "foundryId": "blindnessdeafne1",
-        "name": "Deafness",
+        "name": "Surdité",
         "duration": {
           "seconds": 60
         },
         "statuses": [
-          "deafened"
+          "assourdi"
         ],
-        "description": "At the end of each of its turns, the target repeats the [[/save ability=con]] save, ending the spell on itself on a success."
+        "description": "A la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès."
       }
     ],
     "migrationVersion": 3,
     "_src_file": "foundry.json",
     "_book": null,
-    "name_fr": "Cécité/surdité",
-    "school_fr": "",
-    "desc_fr": "{\"foundryId\" : \"blindnessdeafnes\", \"name\" : \"Blindness\", \"duration\" : {\"seconds\" : 60}, \"statuses\" : [\"blinded\"], \"description\" : \"A la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès.\"}\n\n{\"foundryId\" : \"blindnessdeafne1\", \"name\" : \"Surdité\", \"durée\" : {\"secondes\" : 60}, \"statuses\" : [\"deafened\"], \"description\" : \"À la fin de chacun de ses tours, la cible répète la sauvegarde [[/save ability=con]], mettant fin au sort sur elle-même en cas de succès.\"}"
+    "name_en": "Cécité/Deafness"
   }
 ]
